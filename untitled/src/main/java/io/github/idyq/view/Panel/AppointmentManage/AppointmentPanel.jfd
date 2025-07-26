@@ -1,0 +1,124 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "21.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panelTop"
+				"preferredSize": new java.awt.Dimension( 790, 40 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblSearch"
+					"text": "会员/手机号/预约ID："
+					"preferredSize": new java.awt.Dimension( 120, 24 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 8
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txtSearchKey"
+					"preferredSize": new java.awt.Dimension( 180, 24 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 130
+					"y": 8
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnSearch"
+					"text": "查询"
+					"preferredSize": &Dimension0 new java.awt.Dimension( 70, 28 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSearchAction", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 320
+					"y": 6
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnAdd"
+					"text": "新增"
+					"preferredSize": #Dimension0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnAddAction", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 28
+					"x": 410
+					"y": 6
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnUpdate"
+					"text": "修改"
+					"preferredSize": #Dimension0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnUpdateAction", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 28
+					"x": 490
+					"y": 6
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnDelete"
+					"text": "删除"
+					"preferredSize": #Dimension0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnDeleteAction", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 28
+					"x": 570
+					"y": 6
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblTip"
+					"text": "选中数据进行操作"
+					"font": new java.awt.Font( "Microsoft YaHei UI", 3, 11 )
+					"foreground": new java.awt.Color( 102, 102, 102, 255 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 650
+					"y": 10
+					"width": 120
+					"height": 20
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 5
+				"y": 5
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPaneAppointments"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "tableAppointments"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "预约ID" )
+						add( "会员姓名" )
+						add( "服务项目" )
+						add( "预约时间" )
+						add( "状态" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 5
+				"y": 55
+				"width": 790
+				"height": 350
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 800, 450 )
+		} )
+	}
+}

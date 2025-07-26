@@ -1,0 +1,81 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "21.0.7" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "美发连锁店会员卡信息管理系统"
+			"preferredSize": new java.awt.Dimension( 860, 525 )
+			"minimumSize": new java.awt.Dimension( 860, 525 )
+			add( new FormContainer( "javax.swing.JSplitPane", new FormLayoutManager( class javax.swing.JSplitPane ) ) {
+				name: "splitPane"
+				"dividerSize": 5
+				"dividerLocation": 200
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+					"axis": 1
+				} ) {
+					name: "navPanel"
+					"background": new java.awt.Color( 245, 247, 250, 255 )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"minimumSize": new java.awt.Dimension( 150, 0 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btnHome"
+						"text": "首页"
+						"maximumSize": new java.awt.Dimension( 32676, 34 )
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btnVIPManage"
+						"text": "会员管理"
+						"maximumSize": new java.awt.Dimension( 32676, 34 )
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btnVIPLevel"
+						"text": "会员等级"
+						"maximumSize": new java.awt.Dimension( 32768, 34 )
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btnVIPTransaction"
+						"text": "充值/消费"
+						"maximumSize": new java.awt.Dimension( 32767, 34 )
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btnCardSettings"
+						"text": "充值特惠"
+						"maximumSize": new java.awt.Dimension( 32767, 34 )
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btnAppointments"
+						"text": "预约管理"
+						"maximumSize": new java.awt.Dimension( 32767, 34 )
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btnServiceItem"
+						"text": "服务项目"
+						"maximumSize": new java.awt.Dimension( 32767, 34 )
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "left"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.CardLayout ) ) {
+					name: "contentPanel"
+					"minimumSize": new java.awt.Dimension( 0, 0 )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "right"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 85 )
+			"size": new java.awt.Dimension( 855, 525 )
+		} )
+	}
+}

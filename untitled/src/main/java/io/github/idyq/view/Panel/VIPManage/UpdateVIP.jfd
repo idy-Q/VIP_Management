@@ -1,0 +1,227 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "21.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"preferredSize": new java.awt.Dimension( 595, 390 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "删除原有值即可修改"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 3, 4, false )
+				"foreground": new java.awt.Color( 153, 153, 153, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 5
+				"y": 10
+				"width": 155
+				"height": 40
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "姓名："
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 2, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 70
+				"height": 35
+				"x": 20
+				"y": 95
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtName"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 150
+				"height": 34
+				"x": 95
+				"y": 95
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "电话："
+				"font": &SwingDerivedFont1 new com.jformdesigner.model.SwingDerivedFont( null, 0, 2, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 70
+				"height": 35
+				"x": 20
+				"y": 135
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtPhone"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 150
+				"height": 34
+				"x": 95
+				"y": 135
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "邮箱："
+				"font": &SwingDerivedFont2 new com.jformdesigner.model.SwingDerivedFont( null, 0, 2, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 70
+				"height": 35
+				"x": 20
+				"y": 175
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtEmail"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 150
+				"height": 34
+				"x": 95
+				"y": 175
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "状态："
+				"font": &SwingDerivedFont3 new com.jformdesigner.model.SwingDerivedFont( null, 0, 2, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 70
+				"height": 35
+				"x": 20
+				"y": 215
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "cmbStatus"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "Active"
+					addElement( "Active" )
+					addElement( "Inactive" )
+					addElement( "Frozen" )
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 150
+				"height": 35
+				"x": 95
+				"y": 215
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label10"
+				"text": "会员ID："
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 2, 3, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 225
+				"y": 20
+				"width": 75
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldID"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 290
+				"y": 20
+				"width": 95
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label11"
+				"text": "性别："
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 80
+				"height": 30
+				"x": 275
+				"y": 95
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "cmbGender"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "M"
+					addElement( "M" )
+					addElement( "F" )
+					addElement( "Other" )
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 168
+				"height": 35
+				"x": 375
+				"y": 95
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label12"
+				"text": "出生日期："
+				"font": #SwingDerivedFont1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 80
+				"height": 30
+				"x": 275
+				"y": 140
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtBirthDate"
+				"text": "YYYY-MM-DD"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 168
+				"height": 35
+				"x": 375
+				"y": 135
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label13"
+				"text": "等级ID："
+				"font": #SwingDerivedFont2
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 80
+				"height": 30
+				"x": 275
+				"y": 180
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "cmbLevel"
+				"preferredSize": new java.awt.Dimension( 565, 390 )
+				auxiliary() {
+					"JavaCodeGenerator.postCreateCode": "try {\n    MemberLevelService levelService = new MemberLevelServiceImpl();\n    for (MemberLevel lv : levelService.listAll()) {\n        cmbLevel.addItem(lv.getLevelID());\n    }\n} catch (SQLException ex) {\n    ex.printStackTrace();\n    JOptionPane.showMessageDialog(\n        this,\n        \"加载会员等级失败：\" + ex.getMessage(),\n        \"错误\",\n        JOptionPane.ERROR_MESSAGE\n    );\n}\n"
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 168
+				"height": 35
+				"x": 375
+				"y": 175
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label14"
+				"text": "积分："
+				"font": #SwingDerivedFont3
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 80
+				"height": 30
+				"x": 275
+				"y": 220
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtPoints"
+				"text": "0"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 168
+				"height": 35
+				"x": 375
+				"y": 215
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "确认"
+				"font": &SwingDerivedFont4 new com.jformdesigner.model.SwingDerivedFont( null, 1, 3, false )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1Action", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 75
+				"y": 285
+				"width": 145
+				"height": 40
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "取消"
+				"font": #SwingDerivedFont4
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2Action", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 145
+				"height": 40
+				"x": 310
+				"y": 285
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 565, 390 )
+		} )
+	}
+}

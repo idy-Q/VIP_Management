@@ -1,0 +1,131 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "21.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+				"axis": 1
+			} ) {
+				name: "panelVIPCount"
+				"preferredSize": &Dimension0 new java.awt.Dimension( 150, 100 )
+				"border": new javax.swing.border.TitledBorder( "总会员数" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblTitle"
+					"text": "总会员数"
+					"font": &Font0 new java.awt.Font( "SansSerif", 1, 14 )
+					"alignmentX": 0.5f
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblTotalMembers"
+					"text": "0"
+					"font": &Font1 new java.awt.Font( "SansSerif", 2, 32 )
+					"alignmentX": 0.5f
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 45
+				"y": 50
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+				"axis": 1
+			} ) {
+				name: "panelVIPCount2"
+				"preferredSize": #Dimension0
+				"border": new javax.swing.border.TitledBorder( "本月新增会员" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblTitle2"
+					"text": "本月新增会员"
+					"font": #Font0
+					"alignmentX": 0.5f
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblNewMembersThisMonth"
+					"text": "0"
+					"font": #Font1
+					"alignmentX": 0.5f
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 150
+				"height": 100
+				"x": 235
+				"y": 50
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+				"axis": 1
+			} ) {
+				name: "panelVIPCount3"
+				"preferredSize": #Dimension0
+				"border": new javax.swing.border.TitledBorder( "活跃会员占比" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblTitle3"
+					"text": "活跃会员占比%"
+					"font": #Font0
+					"alignmentX": 0.5f
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblActiveMemberRate"
+					"text": "0.0%"
+					"font": #Font1
+					"alignmentX": 0.5f
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 150
+				"height": 100
+				"x": 425
+				"y": 50
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+				"axis": 1
+			} ) {
+				name: "panelVIPCount4"
+				"preferredSize": #Dimension0
+				"border": new javax.swing.border.TitledBorder( "待处理预约 (n)" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblTitle4"
+					"text": "待处理预约 (n)"
+					"font": #Font0
+					"alignmentX": 0.5f
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblPendingAppointments"
+					"text": "0"
+					"font": #Font1
+					"alignmentX": 0.5f
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 150
+				"height": 100
+				"x": 95
+				"y": 375
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+				"axis": 1
+			} ) {
+				name: "panelVIPCount5"
+				"preferredSize": #Dimension0
+				"border": new javax.swing.border.TitledBorder( "低余额会员 (n)" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblTitle5"
+					"text": "低余额会员 (n)"
+					"font": #Font0
+					"alignmentX": 0.5f
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblLowBalanceMembers"
+					"text": "0"
+					"font": #Font1
+					"alignmentX": 0.5f
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 150
+				"height": 100
+				"x": 360
+				"y": 375
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 645, 510 )
+		} )
+	}
+}
