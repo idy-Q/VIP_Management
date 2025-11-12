@@ -1,4 +1,4 @@
-# VIP Management System（大学生科目作业）
+# VIP Management System（大学生Java科目作业）
 
 一个基于 Java Swing 和 SQLite 开发的桌面端会员管理系统，专为中小型美发门店设计。系统提供会员管理、预约、充值/消费记录和优惠套餐设置等全流程管理功能。
 
